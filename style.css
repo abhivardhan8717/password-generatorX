@@ -4,3 +4,12 @@
   font-family: 'poppins', sans-serif;
   box-sizing: border-box;
 }
+body{
+  background: #002339;
+  color: #fff;
+}
+.container{
+  margin: 12%;
+  width: 90%;
+  max-width: 700;
+}
