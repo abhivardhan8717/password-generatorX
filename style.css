@@ -29,3 +29,17 @@ body{
   font-weight: 500;
   font-size: 45px;
 }
+.container1 h1 span{
+  color: #019f55;
+  border-bottom: 4px solid #019f55;
+  padding-bottom: 7px;
+}
+.display img{
+  width: 30px;
+  cursor: pointer;
+}
+.display input{
+  border: 0;
+  outline: 0;
+  font-size: 24px;
+}
