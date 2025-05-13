@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Random Password Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <h1>Generate a <br><span>Random Password</span></h1>
+
     <div class="display">
-      <input type="text" id="password" placeholder="Password">
-      <img src="images/copy.png" alt="Copy" onclick="copyPassword()">
+      <input type="text" id="password" placeholder="Password" readonly />
+      <i class="fas fa-copy copy-icon" onclick="copyPassword()" title="Copy Password"></i>
     </div>
-    <img src="images/copy.png">
-    <img src="images/generate.png">
-    
+
     <button onclick="createPassword()">
-      <img src="images/generate.png" alt="Generate">Generate Password
+      <i class="fas fa-bolt"></i> Generate Password
     </button>
   </div>
 
@@ -48,6 +49,7 @@
     function copyPassword() {
       passwordBox.select();
       document.execCommand("copy");
+      alert("Password copied to clipboard!");
     }
   </script>
 </body>
