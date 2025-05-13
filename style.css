@@ -32,8 +32,27 @@ button {
     color: white;
     border: none;
     transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
     background-color: #007f7f;
+}
+
+/* Animation for the copy icon */
+.copy-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect to animate the copy icon */
+button:hover .copy-icon {
+    transform: scale(1.2);
+}
+
+button:active .copy-icon {
+    transform: scale(1.1);
 }
