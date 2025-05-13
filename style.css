@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   background: #0a2342;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 h1 {
@@ -34,9 +34,9 @@ h1 span {
 .display {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
   position: relative;
   height: 55px;
+  margin-bottom: 25px;
 }
 
 .display input {
@@ -51,7 +51,8 @@ h1 span {
   color: #000;
 }
 
-.copy-icon {
+/* Tooltip container */
+.tooltip {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -59,10 +60,12 @@ h1 span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.copy-icon {
   color: #00b050;
   cursor: pointer;
   font-size: 22px;
-  width: 30px;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -71,11 +74,7 @@ h1 span {
   color: #00ff99;
 }
 
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
+/* Tooltip text */
 .tooltiptext {
   visibility: hidden;
   width: 60px;
@@ -85,12 +84,12 @@ h1 span {
   border-radius: 4px;
   padding: 5px;
   position: absolute;
-  z-index: 1;
   top: -35px;
   right: -10px;
   opacity: 0;
   transition: opacity 0.3s;
   font-size: 12px;
+  z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
@@ -99,18 +98,18 @@ h1 span {
 }
 
 button {
-  padding: 12px 25px;
+  padding: 12px 20px;
   font-size: 16px;
   background-color: #00b050;
-  color: #fff;
+  color: #000;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
 button:hover {
-  background-color: #009942;
+  background-color: #009944;
 }
 
 button i {
