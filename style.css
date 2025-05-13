@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   position: relative;
-  height: 60px; /* increased height */ 
+  height: 100px; /* increased height */ 
 }
 
 .display input {
