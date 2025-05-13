@@ -53,14 +53,17 @@ h1 span {
 
 .copy-icon {
   position: absolute;
-  right: 20px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
   color: #00b050;
   cursor: pointer;
   font-size: 22px;
-  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
 
 button {
   padding: 12px 25px;
