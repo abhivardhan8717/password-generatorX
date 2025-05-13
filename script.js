@@ -7,7 +7,7 @@ document.getElementById('copyButton').addEventListener('click', function() {
     passwordField.setSelectionRange(0, 99999); // For mobile devices
 
     // Copy the text to the clipboard
-    document.execCommand('copy');
+    document.execCommand('copy'); 
     
     // Show feedback message
     const feedback = document.getElementById('copyFeedback');
