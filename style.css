@@ -24,6 +24,10 @@ input {
     margin-right: 10px;
 }
 
+.copy-box {
+    margin-top: 20px;
+}
+
 button {
     padding: 10px;
     font-size: 18px;
