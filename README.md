@@ -1,3 +1,4 @@
+
 # 🔐 Random Password Generator
 
 This web app generates strong, random passwords with a single click. Built with HTML, CSS, and JavaScript.
@@ -8,7 +9,7 @@ This web app generates strong, random passwords with a single click. Built with 
 
 ## 📸 Preview
 
-![App Screenshot](images/screenshot.png)
+![App Screenshot](strong-password-generatort.png)
 
 ## 📂 Project Structure
 
