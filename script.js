@@ -1,22 +1,22 @@
 function generatePassword() {
-  const length = 12;
-  const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}<>?";
+  const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+{}[]";
   let password = "";
-  for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * charset.length);
-    password += charset[randomIndex];
+  for (let i = 0; i < 12; i++) {
+    password += chars[Math.floor(Math.random() * chars.length)];
   }
   document.getElementById("password").value = password;
 }
 
 function copyPassword() {
-  const passwordField = document.getElementById("password");
-  passwordField.select();
-  passwordField.setSelectionRange(0, 99999); // For mobile devices
+  const passwordInput = document.getElementById("password");
+  const tooltipText = document.getElementById("tooltip-text");
 
-  if (passwordField.value) {
-    navigator.clipboard.writeText(passwordField.value)
-      .then(() => alert("Password copied to clipboard!"))
-      .catch(() => alert("Failed to copy password."));
-  }
+  passwordInput.select();
+  passwordInput.setSelectionRange(0, 99999); // For mobile
+  navigator.clipboard.writeText(passwordInput.value).then(() => {
+    tooltipText.textContent = "Copied!";
+    setTimeout(() => {
+      tooltipText.textContent = "Copy";
+    }, 1500);
+  });
 }
