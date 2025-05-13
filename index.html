@@ -13,7 +13,7 @@
     <h1>Generate a <br><span>Random Password</span></h1>
 
     <div class="display">
-      <input type="text" id="password" placeholder="Password" readonly />
+      <input type="text" id="password" placeholder="Your password will appear here" readonly />
       <i class="fas fa-copy copy-icon" onclick="copyPassword()" title="Copy Password"></i>
     </div>
 
@@ -49,7 +49,7 @@
     function copyPassword() {
       passwordBox.select();
       document.execCommand("copy");
-      alert("Password copied to clipboard!");
+      alert("✅ Password copied to clipboard!");
     }
   </script>
 </body>
