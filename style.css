@@ -63,9 +63,40 @@ h1 span {
   cursor: pointer;
   font-size: 22px;
   width: 30px;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.copy-icon:hover {
+  transform: scale(1.2);
+  color: #00ff99;
+}
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -35px;
+  right: -10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 button {
   padding: 12px 25px;
