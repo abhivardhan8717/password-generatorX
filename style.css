@@ -1,16 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+h1 span {
+  color: #007BFF;
+}
+
 .display {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 25px;
   position: relative;
-  height: 60px; /* increased height */
+  height: 60px; /* larger height */
 }
 
 .display input {
   width: 100%;
-  padding: 15px 50px 15px 15px; /* extra right padding for icon */
-  font-size: 20px; /* larger text */
+  padding: 15px 50px 15px 15px; /* extra padding for icon */
+  font-size: 20px;
   border: 2px solid #ddd;
   border-radius: 8px;
   box-sizing: border-box;
@@ -22,8 +51,27 @@
   right: 20px;
   color: #333;
   cursor: pointer;
-  font-size: 22px; /* bigger icon */
+  font-size: 22px;
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button i {
+  margin-right: 8px;
 }
