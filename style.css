@@ -2,16 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   position: relative;
-  height: 100px; /* increased height */ 
+  height: 60px; /* increased height */ 
 }
 
 .display input {
   width: 100%;
   padding: 15px 50px 15px 15px; /* extra right padding for icon */
   font-size: 20px; /* larger text */
-  border: 2px solid #ddd;
+  border: 2px solid #fff;
   border-radius: 8px;
   box-sizing: border-box;
   height: 100%;
