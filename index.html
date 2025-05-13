@@ -10,12 +10,19 @@
 <body>
   <div class="container">
     <h1>Generate a <span>Random Password</span></h1>
+    
     <div class="display">
       <input type="text" id="password" placeholder="Password" readonly>
-      <span class="copy-icon" onclick="copyPassword()">
-        <i class="fas fa-copy"></i>
-      </span>
+      
+      <!-- Tooltip wrapped around copy icon -->
+      <div class="tooltip">
+        <span class="copy-icon" onclick="copyPassword()">
+          <i class="fas fa-copy"></i>
+        </span>
+        <span class="tooltiptext">Copy</span>
+      </div>
     </div>
+    
     <button onclick="generatePassword()">
       <i class="fas fa-bolt"></i> Generate Password
     </button>
