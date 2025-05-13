@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Password Generator</title>
+  <title>Random Password Generator</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -10,19 +10,19 @@
 <body>
   <div class="container">
     <h1>Generate a <span>Random Password</span></h1>
-    
+
     <div class="display">
       <input type="text" id="password" placeholder="Password" readonly>
       
-      <!-- Tooltip wrapped around copy icon -->
+      <!-- Tooltip with copy icon -->
       <div class="tooltip">
         <span class="copy-icon" onclick="copyPassword()">
           <i class="fas fa-copy"></i>
         </span>
-        <span class="tooltiptext">Copy</span>
+        <span class="tooltiptext" id="tooltip-text">Copy</span>
       </div>
     </div>
-    
+
     <button onclick="generatePassword()">
       <i class="fas fa-bolt"></i> Generate Password
     </button>
