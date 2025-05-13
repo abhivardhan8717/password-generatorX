@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Password Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Copy Text to Clipboard</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to the external CSS file -->
 </head>
 <body>
-    <div class="container">
-    <div class="password-box">
-        <input type="text" id="password" placeholder="Enter password">
-        <button id="copyButton">
-            <i class="copy-icon">📝</i> Copy
-        </button>
-    </div>
-</div>
 
     <div class="container">
-        <h1>Generate a Random Password</h1>
         <div class="password-box">
-            <input type="text" id="password" readonly>
-            <button onclick="generatePassword()">Generate Password</button>
-            <button onclick="copyPassword()">Copy</button>
+            <input type="text" id="password" placeholder="Enter password" value="Sample Password">
+        </div>
+        <div class="copy-box">
+            <button id="copyButton">
+                <i class="copy-icon">📝</i> Copy
+            </button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div id="copyFeedback" style="display:none; color: green; font-size: 14px; margin-top: 10px;">
+        Text copied to clipboard!
+    </div>
+
+    <script src="script.js"></script>  <!-- Link to the external JavaScript file -->
 </body>
 </html>
