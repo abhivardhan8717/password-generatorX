@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #000; /* black background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0a2342;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,49 +10,51 @@ body {
 }
 
 .container {
-  background: #1c1c1c; /* dark container */
-  padding: 30px;
+  background: #0a2342;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
-  max-width: 500px;
-  width: 90%;
+  width: 100%;
+  max-width: 600px;
 }
 
 h1 {
-  font-size: 24px;
-  margin-bottom: 25px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 h1 span {
-  color: #00d4ff; /* neon blue highlight */
+  color: #00b050;
+  border-bottom: 2px solid #00b050;
+  padding-bottom: 3px;
 }
 
 .display {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-bottom: 25px;
   position: relative;
-  height: 60px;
+  height: 55px;
 }
 
 .display input {
   width: 100%;
   padding: 15px 50px 15px 15px;
-  font-size: 20px;
-  border: 2px solid #444;
+  font-size: 18px;
+  border: none;
   border-radius: 8px;
   box-sizing: border-box;
   height: 100%;
-  background: #333;
-  color: #00ffcc;
+  background: #fff;
+  color: #000;
 }
 
 .copy-icon {
   position: absolute;
   right: 20px;
-  color: #00ffcc;
+  color: #00b050;
   cursor: pointer;
   font-size: 22px;
   height: 100%;
@@ -61,18 +63,18 @@ h1 span {
 }
 
 button {
-  padding: 12px 20px;
+  padding: 12px 25px;
   font-size: 16px;
-  background-color: #00d4ff;
-  color: #000;
+  background-color: #00b050;
+  color: #fff;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #00aacc;
+  background-color: #009942;
 }
 
 button i {
