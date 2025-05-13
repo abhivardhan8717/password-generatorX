@@ -1,22 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
- body{
-     background: #002339;
-     color: #fff;
- }
-
-.container{
-    margin: 12%;
-    width: 90%;
-    max-width:,700px;
+body {
+    background: #002339;
+    color: #fff;
 }
 
-.display{
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 700px; /* fixed typo here */
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -28,32 +39,30 @@
     padding: 26px 20px;
     border-radius: 5px;
 }
-.container h1{
-    font-weight: 500;
-    font-size: 45px;
-}
-.container h1 span{
-    color: #019f55;
-    border-bottom: 4px solid #019f55;
-    padding-bottom: 7px;
+
+.display input {
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #333;
 }
 
-.dịsplay input{
-    width: 30px;
-    cursor: pointer;
-}
-
-.display img{
-    border: 0;
-    outline: 0;
+.copy-icon-btn {
     font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #019f55;
+    transition: transform 0.3s ease;
 }
 
-.container button img{
-    width: 28px;
-    margin-right: 10px;
+.copy-icon-btn:hover {
+    transform: scale(1.4);
+    color: #017a40;
 }
-.container button{
+
+.container button.generate-btn {
     border: 0;
     outline: 0;
     background: #019f55;
@@ -66,5 +75,16 @@
     padding: 16px 26px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
+.container button.generate-btn:hover {
+    background: #017a40;
+}
+
+#copyFeedback {
+    margin-top: 15px;
+    color: #00ffcc;
+    display: none;
+    text-align: center;
+}
